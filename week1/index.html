@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Store | Week 1</title>
+    <link rel="stylesheet" href="css/week1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <!-- Logo and Search Bar Together -->
+                <div class="logo-search-container">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./images/logo.png" alt="Ecommerce Logo" class="logo-img">
+                        </a>
+                    </div>
+
+                    <!-- Search Bar -->
+                    <div class="search-container">
+                        <div class="search-box">
+                            <input type="text" class="search-input" placeholder="Search for products...">
+                            <button class="search-btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Actions -->
+                <div class="user-actions">
+                    <!-- Language Dropdown -->
+                    <div class="dropdown language-dropdown">
+                        <button class="dropdown-btn">
+                            <i class="fas fa-globe"></i>
+                            <span>English</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/usa.png" alt="USA Flag" class="flag-icon">
+                                English
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/china.png" alt="China Flag" class="flag-icon">
+                                中文 (Chinese)
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/germany.png" alt="Germany Flag" class="flag-icon">
+                                Deutsch
+                            </a>
+                            
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/uk.png" alt="UK Flag" class="flag-icon">
+                                British English
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/russia.png" alt="Russia Flag" class="flag-icon">
+                                Русский
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/australia.png" alt="Australia Flag" class="flag-icon">
+                                Australian English
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/uae.png" alt="UAE Flag" class="flag-icon">
+                                العربية
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/italy.png" alt="Italy Flag" class="flag-icon">
+                                Italiano
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/denmark.png" alt="Denmark Flag" class="flag-icon">
+                                Dansk
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Dropdown -->
+                    <div class="dropdown shipping-dropdown">
+                        <button class="dropdown-btn">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Shipping to: USA</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-header">Select Country</div>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/usa.png" alt="USA Flag" class="flag-icon">
+                                United States
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/china.png" alt="China Flag" class="flag-icon">
+                                China
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/germany.png" alt="Germany Flag" class="flag-icon">
+                                Germany
+                            </a>
+                            
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/uk.png" alt="UK Flag" class="flag-icon">
+                                United Kingdom
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/russia.png" alt="Russia Flag" class="flag-icon">
+                                Russia
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/australia.png" alt="Australia Flag" class="flag-icon">
+                                Australia
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/uae.png" alt="UAE Flag" class="flag-icon">
+                                UAE
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/italy.png" alt="Italy Flag" class="flag-icon">
+                                Italy
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/denmark.png" alt="Denmark Flag" class="flag-icon">
+                                Denmark
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cart Button -->
+                    <a href="#" class="action-btn cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="btn-text">Cart</span>
+                        <span class="count-badge">0</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-th-large"></i>
+                            Categories
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu categories-menu">
+                            <div class="categories-grid">
+                                <div class="category-column">
+                                    <h4>Electronics</h4>
+                                    <a href="#"><i class="fas fa-mobile-alt"></i> Smartphones</a>
+                                    <a href="#"><i class="fas fa-laptop"></i> Laptops</a>
+                                    
+                                    <a href="#"><i class="fas fa-headphones"></i> Headphones</a>
+                                </div>
+                                <div class="category-column">
+                                    <h4>Fashion</h4>
+                                    <a href="#"><i class="fas fa-tshirt"></i> Men's Clothing</a>
+                                    <a href="#"><i class="fas fa-female"></i> Women's Clothing</a>
+                                   
+                                </div>
+                                <div class="category-column">
+                                    <h4>Home & Kitchen</h4>
+                                    <a href="#"><i class="fas fa-couch"></i> Furniture</a>
+                                    <a href="#"><i class="fas fa-utensils"></i> Kitchenware</a>
+                                  
+                                    <a href="#"><i class="fas fa-lightbulb"></i> Lighting</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Banner -->
+            <section class="hero-section">
+                <div class="hero-banner">
+                    <img src="./images/hero-banner.jpg" alt="Hero Banner">
+                    <div class="hero-text">
+                        <h1>Welcome to Our Store</h1>
+                        <p>Find everything you need in one place</p>
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            Start Shopping
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+           
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="./images/logo.png" alt="Logo">
+                        <h3>Ecommerce Store</h3>
+                    </div>
+                    <p>Your premier destination for quality products. Fast shipping and excellent service.</p>
+                    
+                    <div class="app-buttons">
+                        <h4>Get Our App</h4>
+                        <a href="#" class="app-btn">
+                            <img src="./images/google-play.png" alt="Google Play">
+                        </a>
+                        <a href="#" class="app-btn">
+                            <img src="./images/app-store.png" alt="App Store">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">All Products</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">On Sale</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns & Exchange</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Shopping Street, City, 10001</li>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-8900</li>
+                        <li><i class="fas fa-envelope"></i> support@ecommerce.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 9AM-9PM</li>
+                    </ul>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 Ecommerce Store. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa" title="Visa"></i>
+                    <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                    <i class="fab fa-cc-amex" title="American Express"></i>
+                    <i class="fab fa-cc-paypal" title="PayPal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/week1.js"></script>
+</body>
+</html>
