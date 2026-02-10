@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Store | Home & Products</title>
+    <link rel="stylesheet" href="css/week2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section (Week 1) -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <!-- Logo and Search Bar Together -->
+                <div class="logo-search-container">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./images/logo.png" alt="Ecommerce Logo" class="logo-img">
+                        </a>
+                    </div>
+
+                    <!-- Search Bar -->
+                    <div class="search-container">
+                        <div class="search-box">
+                            <input type="text" class="search-input" placeholder="Search for products...">
+                            <button class="search-btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Actions -->
+                <div class="user-actions">
+                    <!-- Language Dropdown -->
+                    <div class="dropdown language-dropdown">
+                        <button class="dropdown-btn">
+                            <i class="fas fa-globe"></i>
+                            <span>English</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/usa.png" alt="USA Flag" class="flag-icon">
+                                English
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/china.png" alt="China Flag" class="flag-icon">
+                                中文 (Chinese)
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/germany.png" alt="Germany Flag" class="flag-icon">
+                                Deutsch
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/uk.png" alt="UK Flag" class="flag-icon">
+                                British English
+                            </a>
+                            
+        
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/australia.png" alt="Australia Flag" class="flag-icon">
+                                Australian English
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/uae.png" alt="UAE Flag" class="flag-icon">
+                                العربية
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/italy.png" alt="Italy Flag" class="flag-icon">
+                                Italiano
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/denmark.png" alt="Denmark Flag" class="flag-icon">
+                                Denmark
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Dropdown -->
+                    <div class="dropdown shipping-dropdown">
+                        <button class="dropdown-btn">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Shipping to: USA</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-header">Select Country</div>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/usa.png" alt="USA Flag" class="flag-icon">
+                                United States
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/china.png" alt="China Flag" class="flag-icon">
+                                China
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/germany.png" alt="Germany Flag" class="flag-icon">
+                                Germany
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/uk.png" alt="UK Flag" class="flag-icon">
+                                United Kingdom
+                            </a>
+                            
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/australia.png" alt="Australia Flag" class="flag-icon">
+                                Australia
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/uae.png" alt="UAE Flag" class="flag-icon">
+                                UAE
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/italy.png" alt="Italy Flag" class="flag-icon">
+                                Italy
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img src="./images/denmark.png" alt="Denmark Flag" class="flag-icon">
+                                Denmark
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cart Button -->
+                    <a href="#" class="action-btn cart-btn-header">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="btn-text">Cart</span>
+                        <span class="count-badge">0</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a></li>
+                    
+                    <li class="dropdown nav-dropdown">
+                        <a href="#products" class="nav-link">
+                            <i class="fas fa-th-large"></i>
+                            Categories
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu categories-menu">
+                            <div class="categories-grid">
+                                <div class="category-column">
+                                    <h4>Electronics</h4>
+                                    <a href="#products"><i class="fas fa-mobile-alt"></i> Smartphones</a>
+                                    <a href="#products"><i class="fas fa-laptop"></i> Laptops</a>
+                                    <a href="#products"><i class="fas fa-headphones"></i> Headphones</a>
+                                </div>
+                                <div class="category-column">
+                                    <h4>Fashion</h4>
+                                    <a href="#products"><i class="fas fa-tshirt"></i> Men's Clothing</a>
+                                    <a href="#products"><i class="fas fa-female"></i> Women's Clothing</a>
+                                </div>
+                                <div class="category-column">
+                                    <h4>Home & Kitchen</h4>
+                                    <a href="#products"><i class="fas fa-couch"></i> Furniture</a>
+                                    <a href="#products"><i class="fas fa-utensils"></i> Kitchenware</a>
+                                    <a href="#products"><i class="fas fa-lightbulb"></i> Lighting</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section (Week 2 Home Page) -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Discover Amazing Products</h1>
+                        <p class="hero-description">Shop the latest trends in electronics, fashion, and home essentials. Quality products at unbeatable prices.</p>
+                        <div class="hero-buttons">
+                            <a href="#products" class="btn btn-primary">
+                                <i class="fas fa-shopping-cart"></i>
+                                Shop Now
+                            </a>
+                            <a href="#featured" class="btn btn-secondary">View Categories</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-image-wrapper">
+                            <img src="images/headphone2.png" alt="Featured Product" class="floating-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Categories -->
+        <section id="featured" class="featured-categories">
+            <div class="container">
+                <h2 class="section-title">Featured Categories</h2>
+                <div class="categories-grid-section">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <img src="images/laptop.png" alt="Electronics">
+                        </div>
+                        <h3>Electronics</h3>
+                        <p>Latest gadgets & devices</p>
+                        <a href="#products" class="category-link">Explore →</a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <img src="images/shirt.png" alt="Fashion">
+                        </div>
+                        <h3>Fashion</h3>
+                        <p>Trendy clothing & accessories</p>
+                        <a href="#products" class="category-link">Explore →</a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <img src="images/sofa.png" alt="Home & Living">
+                        </div>
+                        <h3>Home & Living</h3>
+                        <p>Furniture & home decor</p>
+                        <a href="#products" class="category-link">Explore →</a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <img src="images/coffeemaker.png" alt="Kitchen">
+                        </div>
+                        <h3>Kitchen</h3>
+                        <p>Appliances & essentials</p>
+                        <a href="#products" class="category-link">Explore →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotional Banner -->
+        <section class="promo-banner">
+            <div class="container">
+                <div class="promo-content">
+                    <div class="promo-text">
+                        <span class="promo-badge">Limited Time Offer</span>
+                        <h2>Get Up to 50% Off</h2>
+                        <p>On selected electronics and fashion items. Don't miss out!</p>
+                        <a href="#products" class="btn btn-white">Shop Sale Items</a>
+                    </div>
+                    <div class="promo-image">
+                        <img src="images/iphone.png" alt="Promo Product">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Listing Section (Week 2) -->
+        <section id="products" class="products-section">
+            <div class="container">
+                <div class="products-header">
+                    <h2 class="section-title">Our Products</h2>
+                    <div class="filter-controls">
+                        <select class="filter-select">
+                            <option>All Categories</option>
+                            <option>Electronics</option>
+                            <option>Fashion</option>
+                            <option>Home & Living</option>
+                            <option>Kitchen</option>
+                        </select>
+                        <select class="filter-select">
+                            <option>Sort by: Featured</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Newest First</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product cards will remain the same as before -->
+                    <!-- Product Card 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/laptop.png" alt="Laptop">
+                            <span class="product-badge">New</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Premium Laptop</h3>
+                            <p class="product-category">Electronics</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(128)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$899.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Remaining 19 product cards exactly as before... -->
+                    <!-- I'll include all 20 cards but keep the code concise -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/iphone.png" alt="iPhone">
+                            <span class="product-badge sale">Sale</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Smartphone Pro</h3>
+                            <p class="product-category">Electronics</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-count">(95)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$699.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/headphone.png" alt="Headphones">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Wireless Headphones</h3>
+                            <p class="product-category">Electronics</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(203)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$149.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/tab.png" alt="Tablet">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Digital Tablet</h3>
+                            <p class="product-category">Electronics</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-count">(76)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$449.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/shirt.png" alt="Shirt">
+                            <span class="product-badge">Trending</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Cotton Casual Shirt</h3>
+                            <p class="product-category">Fashion</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(142)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$39.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/shorts.png" alt="Shorts">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Summer Shorts</h3>
+                            <p class="product-category">Fashion</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-count">(88)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$29.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/jacket.png" alt="Jacket">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Winter Jacket</h3>
+                            <p class="product-category">Fashion</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(167)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$89.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/bag.png" alt="Bag">
+                            <span class="product-badge sale">Sale</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Leather Backpack</h3>
+                            <p class="product-category">Fashion</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-count">(112)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$79.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/sofa.png" alt="Sofa">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Modern Sofa</h3>
+                            <p class="product-category">Home & Living</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(89)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$599.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/mattress.png" alt="Mattress">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Comfort Mattress</h3>
+                            <p class="product-category">Home & Living</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-count">(156)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$399.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/plant.png" alt="Plant">
+                            <span class="product-badge">New</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Indoor Plant</h3>
+                            <p class="product-category">Home & Living</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(234)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$24.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/hanging.png" alt="Wall Hanging">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Wall Decoration</h3>
+                            <p class="product-category">Home & Living</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-count">(67)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$34.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/coffeemaker.png" alt="Coffee Maker">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Coffee Maker</h3>
+                            <p class="product-category">Kitchen</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(189)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$129.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/kettle.png" alt="Kettle">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Electric Kettle</h3>
+                            <p class="product-category">Kitchen</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-count">(145)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$49.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/juicer.png" alt="Juicer">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Juice Blender</h3>
+                            <p class="product-category">Kitchen</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(201)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$79.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/pot.png" alt="Cooking Pot">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Cooking Pot Set</h3>
+                            <p class="product-category">Kitchen</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-count">(123)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$69.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/wallet.png" alt="Wallet">
+                            <span class="product-badge">Trending</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Leather Wallet</h3>
+                            <p class="product-category">Fashion</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(178)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$44.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/coat.png" alt="Coat">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Trench Coat</h3>
+                            <p class="product-category">Fashion</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-count">(94)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$119.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/headphone2.png" alt="Headphone 2">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Gaming Headset</h3>
+                            <p class="product-category">Electronics</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(267)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$89.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/phone.png" alt="Phone">
+                            <span class="product-badge sale">Sale</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Budget Smartphone</h3>
+                            <p class="product-category">Electronics</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-count">(134)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$299.99</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="pagination-btn" disabled>Previous</button>
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn">4</button>
+                    <button class="pagination-btn">Next</button>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-section">
+                    <button class="btn btn-secondary load-more-btn">Load More Products</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section (Week 1) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="./images/logo.png" alt="Logo">
+                        <h3>Ecommerce Store</h3>
+                    </div>
+                    <p>Your premier destination for quality products. Fast shipping and excellent service.</p>
+                    
+                    <div class="app-buttons">
+                        <h4>Get Our App</h4>
+                        <a href="#" class="app-btn">
+                            <img src="./images/google-play.png" alt="Google Play">
+                        </a>
+                        <a href="#" class="app-btn">
+                            <img src="./images/app-store.png" alt="App Store">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">All Products</a></li>
+                        <li><a href="#featured">New Arrivals</a></li>
+                        <li><a href="#products">Best Sellers</a></li>
+                        <li><a href="#products">On Sale</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns & Exchange</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Shopping Street, City, 10001</li>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-8900</li>
+                        <li><i class="fas fa-envelope"></i> support@ecommerce.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 9AM-9PM</li>
+                    </ul>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Ecommerce Store. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa" title="Visa"></i>
+                    <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                    <i class="fab fa-cc-amex" title="American Express"></i>
+                    <i class="fab fa-cc-paypal" title="PayPal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/week2.js"></script>
+</body>
+</html>
