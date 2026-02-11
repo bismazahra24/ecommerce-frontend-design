@@ -738,3 +738,56 @@ img {
         font-size: 22px;
     }
 }
+/* =============================
+       Pretty Navbar Styles
+   ============================= */
+
+.navbar {
+    background-color: #2563eb;      /* Blue background */
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.navbar ul li a:hover {
+    background-color: #1e40af;      /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* =============================
+       Responsive for Mobile
+   ============================= */
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;       /* Stack links vertically */
+        gap: 10px;
+        align-items: center;
+    }
+
+    .navbar ul li a {
+        padding: 10px 16px;           /* Bigger touch area */
+        font-size: 16px;              /* Readable font */
+    }
+
+    .navbar {
+        padding: 15px 10px;
+    }
+}
